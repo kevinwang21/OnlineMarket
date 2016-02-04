@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Product title"
+        android:textColor="#ff232323"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/pic"
+        android:paddingTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        fresco:failureImage="@drawable/empty"
+        fresco:placeholderImage="@drawable/empty"
+        fresco:retryImage="@drawable/empty"
+        fresco:actualImageScaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:minLines="1"
+        android:paddingLeft="6dp"
+        android:paddingTop="8dp"
+        android:singleLine="true"
+        android:text="$99.99"
+        android:textStyle="bold" 
+        android:textColor="#fff23030"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:text="Description Description Description Description Description Description Description Description Description "
+        android:textColor="#ff303030"
+        android:textSize="15dp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="Add to cast" />
+
+</LinearLayout>
