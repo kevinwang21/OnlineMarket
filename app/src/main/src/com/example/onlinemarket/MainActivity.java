@@ -97,8 +97,6 @@ public class MainActivity extends Activity implements TextWatcher, View.OnClickL
         btn.setEnabled(false);
         input.addTextChangedListener(this);
 
-        //input.setText("http://192.168.1.116:8080/a.html");
-
         bar.setVisibility(View.GONE);
         tip.setVisibility(View.GONE);
         btn.setOnClickListener(this);
