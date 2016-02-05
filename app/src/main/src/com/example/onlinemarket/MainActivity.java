@@ -11,6 +11,7 @@ import org.json.*;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -81,6 +82,12 @@ public class MainActivity extends Activity implements TextWatcher, View.OnClickL
         }catch (Throwable e){
             Log.e(TAG, "", e);
         }
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Log.v(TAG, "onConfigurationChanged: " + newConfig);
     }
 
     public static synchronized void setCurHttpURLConnection(HttpURLConnection conn){
